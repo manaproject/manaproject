@@ -23,14 +23,15 @@ Among the notable Mana featuers are:
 - No exception (yes it is a feature)
 - Static and strong typing
 - Immutability by default
-- No null references (not even a `null` keyword)
+- Safe, no null references (not even a `null` keyword)
+- Native interface MNI (Mana native interface)
 
 ## Sponsor the project
 If you believe this project holds some potential (which I obviously believe) feel free contact me at [schouri@praisethemoon.org](schouri@praisethemoon.org).
 
 ## Design Blog Posts
 These some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
-Note that mana design is still work in progress, there not even a compiler yet. So you might find some different standard library calls and imports. What matters is just the concept.
+Note that mana design is still work in progress, there is not even a compiler yet. You might find some different standard library calls and imports. What matters is just the concept.
 
 ### [Mana for high-performance computing](https://blog.praisethemoon.org/2017/06/11/mana-for-high-performance-computing-concept-wip/)
 **Published on: Jun 11, 2017 @ 08:28**
