@@ -25,6 +25,9 @@ Among the notable Mana featuers are:
 - Immutability by default
 - No null references (not even a `null` keyword)
 
+## Sponsor the project
+If you believe this project holds some potential (which I obviously believe) feel free contact me at [schouri@praisethemoon.org](schouri@praisethemoon.org).
+
 ## Design Blog Posts
 These some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
 Note that mana design is still work in progress, there not even a compiler yet. So you might find some different standard library calls and imports. What matters is just the concept.
