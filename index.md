@@ -1,7 +1,7 @@
 Mana Project
 ===
 
-![](http://blog.praisethemoon.org/wp-content/uploads/2017/06/mana_v2.png)
+![](resources/mana_m.png)
 
 Mana project focuses around building Mana programming language.
 Mana is a general purpose programming language to build robust 
@@ -72,7 +72,7 @@ fn TestVectorSum() {
 
 The compiler is able to generate appropriate SPIR-V kernel. There are few limitations regarding the kernel, the parameters passed must not be objects. Since object would translate into structures and structures and not very friendly when being passed between CPU and GPU.
 
-### (Mana Sample - RGB to HSV)[https://blog.praisethemoon.org/2017/06/10/mana-sample-rgb-to-hsv/]
+### [Mana Sample - RGB to HSV](https://blog.praisethemoon.org/2017/06/10/mana-sample-rgb-to-hsv/)
 **Published on: Jun 10, 2017 @ 14:11**
 
 I have been struggling to find a good syntactic design for Mana programming language. And I came into conclusion, almost everything that can be a statement can be an expression, even match statements, if, else etc. The only exception would be loops , as they can be represented as recursive functions.
