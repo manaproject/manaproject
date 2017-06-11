@@ -1,7 +1,7 @@
 Mana Project
 ===
 
-![](resources/mana_m.png)
+![](resources/logo_m.png)
 
 Mana project focuses around building Mana programming language.
 Mana is a general purpose programming language to build robust 
