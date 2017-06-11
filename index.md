@@ -125,7 +125,8 @@ class RGBColor {
       
       return (h as u8, s, v)
    }
-}```
+}
+```
 
 ### [Mana, the end of the beginning](https://blog.praisethemoon.org/2017/04/07/mana-the-end-of-the-beginning/)
 **Published on: Apr 7, 2017 @ 14:07**
