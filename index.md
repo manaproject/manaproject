@@ -27,7 +27,7 @@ Among the notable Mana featuers are:
 - Native interface MNI (Mana native interface)
 
 ## Sponsor the project
-If you believe this project holds some potential (which I obviously believe) feel free contact me at [schouri@praisethemoon.org](schouri@praisethemoon.org).
+If you believe this project holds some potential (which I obviously believe) feel free contact me at [manaproject@praisethemoon.org](manaproject@praisethemoon.org).
 
 ## Design Blog Posts
 These some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
