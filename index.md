@@ -42,9 +42,9 @@ Mana will natively support OpenCL if i is available, or it would simply run a ke
 
 ```ml
 import(
-   mana.lang.*
-   mana.Math
-   mana.hpc[Kernel, KernelTarget]
+	mana.lang.*
+	mana.Math
+	mana.hpc[Kernel, KernelTarget]
 )
 
 /*
@@ -54,24 +54,23 @@ import(
 
 @Kernel(target=KernelTarget.GPU)
 fn vectorSum(@Global u: u32[], @Global v: u32[], @Global w: u32[]) {
-   let @GlobalID i: u64
-   w[i] = u[i] + v[i]
+	let @GlobalID i: u64
+	w[i] = u[i] + v[i]
 }
 
 fn TestVectorSum() {
-   let u, v, w: u32[256]
+	let u, v, w: u32[256]
 
-   foreach i: u8 in Range(0, 255) {
-      u[i] = Math.random(0, 1000)
-      v[i] = Math.random(0, 1000)
-   }
+	foreach i: u8 in Range(0, 255) {
+		u[i] = Math.random(0, 1000)
+		v[i] = Math.random(0, 1000)
+	}
 
-   @KernelInvoke
-   vectorSum(u, v, w)
-
-   foreach i:u32 in w do {
-      stdio.print("${u[i]} + ${v[i]} = ${w[i]}")
-   }
+	@KernelInvoke
+	vectorSum(u, v, w){
+	foreach i:u32 in w do {
+		stdio.print("${u[i]} + ${v[i]} = ${w[i]}")
+	}
 }
 ```
 
@@ -86,49 +85,48 @@ So I decided to present a snippet to demonstrate how powerful expressions can be
 
 ```ml
 import(
-   mana.lang
-   mana.io
-   mana.Math
+	mana.lang
+	mana.io
+	mana.Math
 )
 
 class RGBColor {
-   local r, g, b: u8
+	local r, g, b: u8
 
-   local fn debug() = stdout.println("<${r}, ${g}, ${b}>")
-   local fn getRGB() = (r, g, b) // (u8, u8, u8)
-   local fn setRGB(colors: (u8, u8, u8)) = (r, g, b) = colors
+	local fn debug() = stdout.println("<${r}, ${g}, ${b}>")
+	local fn getRGB() = (r, g, b) // (u8, u8, u8)
+	local fn setRGB(colors: (u8, u8, u8)) = (r, g, b) = colors
 
-   local fn toHSV() -> (u16, f32, f32) {
-      let r1 = r/255.0
-      let g1 = g/255.0
-      let b1 = b/255.0
+	local fn toHSV() -> (u16, f32, f32) {
+		let r1 = r/255.0
+		let g1 = g/255.0
+		let b1 = b/255.0
       
-      let cmax = Math.max(r1, g1, b1)
-      let cmin = Math.min(r1, g1, b1)
+		let cmax = Math.max(r1, g1, b1)
+		let cmin = Math.min(r1, g1, b1)
       
-      let delta = cmax-cmin
+		let delta = cmax-cmin
       
-      let h = 
-         if delta == 0: 
-            0
-         else:
-            60 * match cmax {
-               r1: ((g1 - b1)/delta) % 6
-               g1: (b1 - r1)/delta + 2
-               b1: (b1 - g1)/delta + 4
-               else: 0 // unreachable
-            }
+		let h = 
+			if delta == 0: 
+				0
+			else:
+				60 * match cmax {
+					r1: ((g1 - b1)/delta) % 6
+					g1: (b1 - r1)/delta + 2
+					b1: (b1 - g1)/delta + 4
+					else: 0 // unreachable
+				}
+		let s = 
+			if cmax == 0:
+				0
+			else:
+				delta/cmax
       
-      let s = 
-         if cmax == 0:
-            0
-         else:
-            delta/cmax
+		let v = cmax
       
-      let v = cmax
-      
-      return (h as u8, s, v)
-   }
+		return (h as u8, s, v)
+	}
 }
 ```
 
@@ -153,13 +151,13 @@ The biggest challenge I faced while developing Mana's syntax was how would all 
 
 ```ml
 import (
-  mana.stdio.Console
-  mana.lang.*
+	mana.stdio.Console
+	mana.lang.*
 )
 
 function main(args: String[]) -> u32 {
-  stdio.println("Hello, World!")
-  return 0
+	stdio.println("Hello, World!")
+	return 0
 }
 ```
 
@@ -176,11 +174,11 @@ Example:
 
 ```ml
 class CustomUIButton implements AbstractUIBotton {
-       uiRenderer: UIB::UIRenderer = UIComponents::UIB::DefaultButtonRenderer
-       eventHandler: UIB::EventHandler = new CustomUIButtonEventHandler()
+	uiRenderer: UIB::UIRenderer = UIComponents::UIB::DefaultButtonRenderer
+	eventHandler: UIB::EventHandler = new CustomUIButtonEventHandler()
 
-       fn getUIRenderer() -> UIB::UIRenderer = uiRenderer
-       fn getEventHandler() -> UIB::EventHandler = eventHandler
+	fn getUIRenderer() -> UIB::UIRenderer = uiRenderer
+	fn getEventHandler() -> UIB::EventHandler = eventHandler
 }
 ```
 
