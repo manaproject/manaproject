@@ -40,7 +40,7 @@ Using Mana annotation features, high-performance computing can become a simple t
 
 Mana will natively support OpenCL if i is available, or it would simply run a kernel on various CPU threads if it is not available.
 
-```ml
+```
 import(
 	mana.lang.*
 	mana.Math
@@ -83,7 +83,7 @@ I have been struggling to find a good syntactic design for Mana programming lang
 
 So I decided to present a snippet to demonstrate how powerful expressions can be. In the following example, both match and if-else are used as expressions, meaning they can be used inside operators, function parameters, etc. The example is a demonstration of RGB to HSV color space conversion, the formula can be found here: [http://www.rapidtables.com/convert/color/rgb-to-hsv.htm](http://www.rapidtables.com/convert/color/rgb-to-hsv.htm).
 
-```ml
+```
 import(
 	mana.lang
 	mana.io
@@ -149,7 +149,7 @@ The biggest challenge I faced while developing Mana's syntax was how would all 
 
 #### Hello world
 
-```ml
+```
 import (
 	mana.stdio.Console
 	mana.lang.*
@@ -172,7 +172,7 @@ Interface-oriented pattern along with composition will lead to highly coupled co
 
 Example:
 
-```ml
+```
 class CustomUIButton implements AbstractUIBotton {
 	uiRenderer: UIB::UIRenderer = UIComponents::UIB::DefaultButtonRenderer
 	eventHandler: UIB::EventHandler = new CustomUIButtonEventHandler()
