@@ -1,7 +1,7 @@
 Mana Project
 ===
 <center>
-![](resources/logo_s.png)
+<img src="resources/logo_s.png">
 </center>
 
 Mana project focuses around building Mana programming language.
