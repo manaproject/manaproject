@@ -27,10 +27,10 @@ Among the notable Mana featuers are:
 - Native interface MNI (Mana native interface)
 
 ## Sponsor the project
-If you believe this project holds some potential (which I obviously believe) feel free contact me at [manaproject@praisethemoon.org](manaproject@praisethemoon.org).
+If you believe that this project holds potential (which I obviously do) feel free contact me at [manaproject@praisethemoon.org](manaproject@praisethemoon.org).
 
 ## Design Blog Posts
-These some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
+These are some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
 Note that mana design is still work in progress, there is not even a compiler yet. You might find some different standard library calls and imports. What matters is just the concept.
 
 ### [Mana for high-performance computing](https://blog.praisethemoon.org/2017/06/11/mana-for-high-performance-computing-concept-wip/)
@@ -38,7 +38,7 @@ Note that mana design is still work in progress, there is not even a compiler ye
 
 Using Mana annotation features, high-performance computing can become a simple task.
 
-Mana will natively support OpenCL if i is available, or it would simply run a kernel on various CPU threads if it is not available.
+Mana will natively support OpenCL if it is available, or it would simply run a kernel on various CPU threads if it is not.
 
 ```
 import(
@@ -74,7 +74,7 @@ fn TestVectorSum() {
 }
 ```
 
-The compiler is able to generate appropriate SPIR-V kernel. There are few limitations regarding the kernel, the parameters passed must not be objects. Since object would translate into structures and structures and not very friendly when being passed between CPU and GPU.
+The compiler is able to generate appropriate SPIR-V kernel. There are few limitations regarding the kernel, the parameters passed must not be objects. Since object would translate into structures and structures are not easy to deal with when being passed between CPU and GPU.
 
 ### [Mana Sample - RGB to HSV](https://blog.praisethemoon.org/2017/06/10/mana-sample-rgb-to-hsv/)
 **Published on: Jun 10, 2017 @ 14:11**
@@ -134,7 +134,7 @@ class RGBColor {
 **Published on: Apr 7, 2017 @ 14:07**
 
 #### How it all started:
-I have been designing this language for a very long time and now it's time I make it clear with myself and others why (again) do we need another programming. Again, I don't feel comfortable with any of the existing programming languages, so I decided to roll my own. As I research into compiler construction, I discovered various programming paradigms and languages that I didn't know about. I learned functional programming, JIT, how OS and compilers work and more great things such as LLVM, VM design, various optimizations. I kept searching for a good backend for my compiler LLVM, libfirm, C, roll my own VM etc. I haven't considered .NET's CLR or the JVM as I believe there are enough languages targeting these platforms. So I think I have researched enough, it's been about 5 years as I am writing this article and I have enough ideas ready to be implemented to design the language that I believe would achieve higher level goals.
+I have been designing this language for a very long time and now it's time I make it clear with myself and others, why (again) do we need another programming language. Again, I don't feel comfortable with any of the existing programming languages, so I decided to roll my own. As I research into compiler construction, I discovered various programming paradigms and languages that I didn't know about. I learned functional programming, JIT, how OS and compilers work, LLVM, VM design, various optimizations, etc. I kept searching for a good backend for my compiler LLVM, libfirm, C, roll my own VM etc. I haven't considered .NET's CLR or the JVM as I believe there are enough languages targeting these platforms. So I think I have researched enough, it's been about 5 years as I am writing this article and I have enough ideas ready to be implemented to design the language that I believe it would achieve greater goals.
 
 #### The end of the beginning
 Mana is a general purpose programming language targeting application level development (Desktop, Mobile, Backend). Mana is multi-paradigm featuring:
