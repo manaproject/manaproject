@@ -67,7 +67,7 @@ fn TestVectorSum() {
 	}
 
 	@KernelInvoke
-	vectorSum(u, v, w){
+	vectorSum(u, v, w)
 	foreach i:u32 in w do {
 		stdio.print("${u[i]} + ${v[i]} = ${w[i]}")
 	}
