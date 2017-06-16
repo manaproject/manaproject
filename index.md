@@ -4,10 +4,10 @@ Mana Project
 <img src="resources/logo_s.png">
 </center>
 
-Mana project focuses around building Mana programming language.
-Mana is a general purpose programming language to build robust 
-and scalabe concurrent applications from web servers, desktop 
-applications and high-performance/scientific computing.
+The Mana Project focuses around developing the Mana programming language.
+Mana is a general purpose programming language designed to build robust 
+and scalable concurrent applications ranging from web servers, desktop 
+applications to mobile and high-performance/scientific computing.
 
 ## Mana Programming Language
 Mana aims to be a general purpose language, emphasizing immutability and safe
@@ -20,14 +20,14 @@ Among the notable Mana featuers are:
 	- Functional
 	- Generic
 	- Concurrent
-- No exception (yes it is a feature)
+- No exceptions (yes it is a feature)
 - Static and strong typing
 - Immutability by default
 - Safe, no null references (not even a `null` keyword)
-- Native interface MNI (Mana native interface)
+- Native interface MNI (Mana Native Interface)
 
 ## Sponsor the project
-If you believe that this project holds potential (which I obviously do) feel free contact me at [manaproject@praisethemoon.org](manaproject@praisethemoon.org).
+If you believe that this project holds potential (which I obviously believe it does) feel free contact me at [manaproject@praisethemoon.org](manaproject@praisethemoon.org).
 
 ## Design Blog Posts
 These are some articles about mana design posted in my blog at [https://blogs.praisethemoon.org](https://blogs.praisethemoon.org).
